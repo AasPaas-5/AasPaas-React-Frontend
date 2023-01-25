@@ -1,0 +1,5 @@
+.holder {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 35px 0px 35px;
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+.trending {
+    display: inline-block;
+    background: #D2E3F2;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    max-width: max-content;
+    margin: 10px;
+}
+
+.head {
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 0px 0px 0px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.productCover {
+    margin-left: 20px;
+}
