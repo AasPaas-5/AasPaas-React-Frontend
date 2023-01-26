@@ -3,8 +3,16 @@ import { Link } from "react-router-dom";
 import AasPaas_Black_Logo from "../../assets/Navbar/AasPaas_Black_Logo.webp";
 import Search from "../../assets/Navbar/search_logo.webp";
 import SignIn from "../../assets/Navbar/sign_in.webp";
+import { useContext, useEffect } from "react";
+import AuthContext from "../../store/auth-context";
 
 function Navbar() {
+  const context = useContext(AuthContext);
+
+  useEffect(() => {
+    console.log(context);
+  }, []);
+
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>

@@ -5,8 +5,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import Home from "./pages/Home";
 import Error404 from "../src/pages/Error404/Error404";
 import Login from "../src/pages/Login/Login";
-import { Provider } from "react-redux";
-import { store } from "./store";
+import AuthContext from "./store/auth-context";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -30,9 +29,15 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <GoogleOAuthProvider clientId="660793536075-ibohhn3d1r5glru2039or6omdg4tus50.apps.googleusercontent.com">
-      <Provider store={store}>
+      <AuthContext.Provider
+        value={{
+          isLoggedIn: false,
+          id: null,
+          token: null,
+        }}
+      >
         <RouterProvider router={router} />
-      </Provider>
+      </AuthContext.Provider>
     </GoogleOAuthProvider>
   </React.StrictMode>
 );
