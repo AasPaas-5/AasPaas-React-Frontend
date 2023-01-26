@@ -1,20 +1,10 @@
 import styles from "./Login.module.css";
 import { useGoogleLogin } from "@react-oauth/google";
-import { useThunk } from "../../hooks/use-thunk";
-import { login } from "../../store/thunks/login";
-// import { useSelector } from "react-redux";
-// import axios from "axios";
 
 function Login() {
-  const [doLogin, isLogingIn, LogingError] = useThunk(login);
-
-  // const { data } = useSelector((state) => {
-  //   console.log(state);
-  //   return state;
-  // });
-
   const loginHandler = useGoogleLogin({
-    onSuccess: (codeResponse) => doLogin(codeResponse.access_token),
+    onSuccess: (codeResponse) =>
+      console.log({ token: codeResponse.access_token }),
   });
 
   return (

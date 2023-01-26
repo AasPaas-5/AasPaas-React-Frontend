@@ -8,13 +8,13 @@ function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-        <img src={AasPaas_Black_Logo} />
+        <img alt="AasPaas Logo" src={AasPaas_Black_Logo} />
       </div>
       <div className={styles.search}>
         <form>
           <input type="text" placeholder="Search for anything"></input>
           <button type="submit">
-            <img src={Search} />
+            <img alt="search-Btn" src={Search} />
           </button>
         </form>
       </div>
@@ -26,7 +26,7 @@ function Navbar() {
           <Link to="">Sell</Link>
         </div>
         <Link to="login" className={styles.signin}>
-          <img src={SignIn} />
+          <img alt="Profile" src={SignIn} />
           Sign in
         </Link>
       </div>
