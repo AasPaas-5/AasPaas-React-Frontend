@@ -95,6 +95,10 @@ a {
     font-family: 'Poppins', sans-serif;
 }
 
+.profileImg {
+    border-radius: 50px;
+}
+
 .categories {
     width: 325px;
     display: flex;

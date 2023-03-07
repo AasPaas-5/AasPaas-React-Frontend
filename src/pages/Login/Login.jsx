@@ -1,11 +1,47 @@
 import styles from "./Login.module.css";
 import { useGoogleLogin } from "@react-oauth/google";
+import { useSelector } from "react-redux";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useGLogin } from "../../hooks/use-gLogin";
 
 function Login() {
-  const loginHandler = useGoogleLogin({
-    onSuccess: (codeResponse) =>
-      console.log({ token: codeResponse.access_token }),
+  const navigate = useNavigate();
+  const { handleGoogleLogin, loginResults } = useGLogin();
+
+  const user = useSelector((state) => {
+    return state.user;
   });
+
+  // console.log(user);
+  // console.log(loginResults);
+
+  const loginHandler = useGoogleLogin({
+    onSuccess: async (tokenResponse) => {
+      handleGoogleLogin(tokenResponse);
+    },
+  });
+
+  useEffect(() => {
+    if (
+      user.isLoggedIn &&
+      loginResults.data &&
+      loginResults.data.status === 212
+    ) {
+      navigate("/register");
+      toast.warn(loginResults.data.message);
+    }
+
+    if (
+      user.isLoggedIn &&
+      loginResults.data &&
+      loginResults.data.status === 200
+    ) {
+      navigate("/");
+      toast.success(`Welcome ${user.name}`);
+    }
+  }, [loginResults, navigate, user.isLoggedIn, user.name]);
 
   return (
     <div className={styles.bg}>
@@ -16,12 +52,17 @@ function Login() {
         />
       </div>
       <div className={styles.google_login}>
-        <button onClick={() => loginHandler()}>
+        <button
+          disabled={loginResults.isLoading}
+          onClick={() => loginHandler()}
+        >
           <img
-            alt="yo"
+            alt="Google-Logo"
             src="https://res.cloudinary.com/aaspaas/image/upload/v1667074689/Social/googleLogin_ugxmfp.png"
           />
-          <span>Sign in with google</span>
+          <span>
+            {loginResults.isLoading ? "Logging in..." : "Sign in with google"}
+          </span>
         </button>
         <p>
           Having Trouble Signing in?

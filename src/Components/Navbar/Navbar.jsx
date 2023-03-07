@@ -3,15 +3,12 @@ import { Link } from "react-router-dom";
 import AasPaas_Black_Logo from "../../assets/Navbar/AasPaas_Black_Logo.webp";
 import Search from "../../assets/Navbar/search_logo.webp";
 import SignIn from "../../assets/Navbar/sign_in.webp";
-import { useContext, useEffect } from "react";
-import AuthContext from "../../store/auth-context";
+import { useSelector } from "react-redux";
 
 function Navbar() {
-  const context = useContext(AuthContext);
-
-  useEffect(() => {
-    console.log(context);
-  }, []);
+  const user = useSelector((state) => {
+    return state.user;
+  });
 
   return (
     <nav className={styles.nav}>
@@ -33,10 +30,17 @@ function Navbar() {
           <Link to="">Orders</Link>
           <Link to="">Sell</Link>
         </div>
-        <Link to="login" className={styles.signin}>
-          <img alt="Profile" src={SignIn} />
-          Sign in
-        </Link>
+        {!user.isLoggedIn ? (
+          <Link to="login" className={styles.signin}>
+            <img alt="Profile" src={SignIn} />
+            Sign in
+          </Link>
+        ) : (
+          <Link to="profile" className={styles.signin}>
+            <img alt="Profile" src={user.photo} className={styles.profileImg} />
+            {user.name.split(" ")[0]}
+          </Link>
+        )}
       </div>
     </nav>
   );
