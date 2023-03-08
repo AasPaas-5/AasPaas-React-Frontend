@@ -1,28 +1,26 @@
-// import Product from "../Product/Product";
 import styles from "./ProductCover.module.css";
-// import { useFetchProductsQuery } from "../../store";
+import { useFetchProductsQuery } from "../../store";
+import Product from "../Product/Product";
 
-function ProductCover({ amount }) {
-  let products;
+function ProductCover({ count, header }) {
+  const { data, error, isFetching } = useFetchProductsQuery(count);
 
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+  if (isFetching) {
+    return <div>Loading...</div>;
+  }
 
-  // const fetchData = async () => {
-  //   const { data } = await axios.get(`/api/products?count=${amount}`);
-  //   products = data.products.map((product) => {
-  //     return <Product key={product._id} data={product} />;
-  //   });
-  // };
-
-  // const { data, errror, isLoading } = useFetchProductsQuery();
-  // console.log(data, errror, isLoading);
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   return (
     <div className={styles.trending}>
-      <div className={styles.head}>Recently added</div>
-      <div className={styles.productCover}>{products}</div>
+      {header ? <div className={styles.head}>{header}</div> : ""}
+      <div className={styles.productCover}>
+        {data.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
+      </div>
     </div>
   );
 }

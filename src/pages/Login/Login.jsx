@@ -33,6 +33,10 @@ function Login() {
       toast.warn(loginResults.data.message);
     }
 
+    if (loginResults.data && loginResults.data.status === 210) {
+      toast.warn(loginResults.data.message);
+    }
+
     if (
       user.isLoggedIn &&
       loginResults.data &&
@@ -41,7 +45,7 @@ function Login() {
       navigate("/");
       toast.success(`Welcome ${user.name}`);
     }
-  }, [loginResults, navigate, user.isLoggedIn, user.name]);
+  }, [loginResults.data, navigate, user.isLoggedIn, user.name]);
 
   return (
     <div className={styles.bg}>

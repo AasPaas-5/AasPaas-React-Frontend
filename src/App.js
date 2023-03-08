@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import Home from "./pages/Home";
-import Error404 from "../src/pages/Error404/Error404";
-import Login from "../src/pages/Login/Login";
-import Register from "../src/pages/Register/Register";
+import Error404 from "./pages/Error404/Error404";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import EachProduct from "./pages/EachProduct/EachProduct";
 import { useEffect } from "react";
 import { useCookies } from "react-cookie";
 import { useDispatch, useSelector } from "react-redux";
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
+      <Route path="products" element={<EachProduct />} />
       <Route path="*" element={<Error404 />} />
     </Route>
   )
@@ -57,7 +59,7 @@ function App() {
     }
   }, [cookies.user, dispatch, user.isLoggedIn]);
 
-  console.log(user);
+  // console.log(user);
 
   return <RouterProvider router={router} />;
 }
