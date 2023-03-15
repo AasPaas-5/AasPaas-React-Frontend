@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { useCookies } from "react-cookie";
 import { useDispatch, useSelector } from "react-redux";
 import { loginSuccess, logoutSuccess } from "./store";
+import Title from "./Components/Title";
 
 import {
   createBrowserRouter,
@@ -19,8 +20,8 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route index element={<Home />} />
-      <Route path="login" element={<Login />} />
+      <Route index element={<><Title title="Home Page" /><Home /></>} />
+      <Route path="login" element={<><Title title="Login" /><Login /></>} />
       <Route path="register" element={<Register />} />
       <Route path="products" element={<EachProduct />} />
       <Route path="*" element={<Error404 />} />

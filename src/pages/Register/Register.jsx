@@ -81,8 +81,6 @@ function RegistrationForm() {
     }
   };
 
-  console.log(user);
-
   return (
     <div className={styles.registration}>
       <form onSubmit={handleSubmit}>

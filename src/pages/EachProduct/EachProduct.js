@@ -30,7 +30,7 @@ function EachProduct() {
     <>
       <div id="product">
         <div id="back">
-          <a onclick=" window.location.href='/'">←Back</a>
+          <a href="/">←Back</a>
         </div>
         <div id="productimg">
           <div className={styles.prodtrend1}>
@@ -60,17 +60,16 @@ function EachProduct() {
           <p>{data.description}</p>
           <div id="Lock">
             <button
-              onclick="window.location.href = '/products/lockConfirmation?id=<%=foundProduct._id%>'"
               id="Lockbtn"
             >
               Lock Product
             </button>
-            <button onclick="run()" id="Favouritebtn">
+            <button id="Favouritebtn">
               Add to Wishlist
             </button>
           </div>
           <div id="report">
-            <a href="/products/report?id=<%=foundProduct._id%>">
+            <a href="/">
               🚩Report Product
             </a>
           </div>

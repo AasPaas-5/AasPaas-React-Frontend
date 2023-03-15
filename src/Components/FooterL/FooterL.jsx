@@ -48,19 +48,19 @@ function FooterL() {
         <div className={styles.footer_boxes}>
           <div className={styles.footer_logo}>
             <img alt="logo"
-              onClick="window.location.href = '/'"
+              // onClick="window.location.href = '/'"
               src="https://res.cloudinary.com/aaspaas/image/upload/v1666903174/Social/AasPaas_White_etdgpp.png"
             />
           </div>
           <div className={styles.address}>
             <div
-              onClick="window.location.href = 'https://www.iitbhu.ac.in/'"
+              // onClick="window.location.href = 'https://www.iitbhu.ac.in/'"
               className={styles.address_logo}
             >
               <img alt="college" src="https://res.cloudinary.com/aaspaas/image/upload/v1666903864/Backgrounds/Group_3614_nldmvf.png" />
             </div>
             <div
-              onClick="window.location.href = 'https://www.iitbhu.ac.in/'"
+              // onClick="window.location.href = 'https://www.iitbhu.ac.in/'"
               className={styles.address_desc}
             >
               Indian Institute Of Technology
