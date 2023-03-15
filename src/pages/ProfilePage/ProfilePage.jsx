@@ -8,7 +8,7 @@ function ProfilePage() {
         <div className={styles.sections}>
           <a href="/users/logout" className={styles.cards}>
             <div className={styles.all_card}>
-              <img
+              <img alt="logout"
                 src="https://res.cloudinary.com/sairev/image/upload/v1665898376/SecondSwap/Files/logout_macfk7_l7xo7b.png"
                 id="logoutimg"
               />
@@ -20,9 +20,9 @@ function ProfilePage() {
               </ul>
             </div>
           </a>
-          <a href="" className={styles.cards}>
+          <a href="/" className={styles.cards}>
             <div className={styles.all_card}>
-              <img
+              <img alt="locked"
                 src="https://res.cloudinary.com/sairev/image/upload/v1665898416/SecondSwap/Files/Profile%20Images/locked_products_s4ffly_qquwfz.png"
                 className={styles.lockedimg}
               />
@@ -39,7 +39,7 @@ function ProfilePage() {
           </a>
           <a href="/users/contact" className={styles.cards}>
             <div className={styles.all_card}>
-              <img
+              <img alt="contact"
                 src="https://res.cloudinary.com/sairev/image/upload/v1665898416/SecondSwap/Files/Profile%20Images/contact_us_fpi3py_dpw3ty.png"
                 className={styles.contactimg}
               />
@@ -55,7 +55,7 @@ function ProfilePage() {
           </a>
           <a href="/users/edit" className={styles.cards}>
             <div className={styles.all_card}>
-              <img
+              <img alt="edit"
                 src="https://res.cloudinary.com/sairev/image/upload/v1665898416/SecondSwap/Files/Profile%20Images/edit_info_d4n9ze_idrhea.png"
                 id="editimg"
               />
@@ -68,7 +68,7 @@ function ProfilePage() {
           </a>
           <a href="/users/wishlist" className={styles.cards}>
             <div className={styles.all_card}>
-              <img
+              <img alt="wishlist"
                 src="https://res.cloudinary.com/aaspaas/image/upload/v1667571734/ProfilePage/wishlist_arfupx.png"
                 className={styles.sellimg}
               />
@@ -81,7 +81,7 @@ function ProfilePage() {
           </a>
           <a href="/users/delete" className={styles.cards}>
             <div className={styles.all_card}>
-              <img
+              <img alt="delete"
                 src="https://res.cloudinary.com/sairev/image/upload/v1665898416/SecondSwap/Files/Profile%20Images/delete_account_jw0edu_mm63ua.png"
                 id="deleteimg"
               />

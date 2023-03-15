@@ -9,7 +9,7 @@ function Sell() {
           <a href="/products/selectCategory">
             <div className={styles.account}>
               <div>
-                <img
+                <img alt="sell"
                   src="https://res.cloudinary.com/sairev/image/upload/v1661367654/AasPaas/Files/Profile%20Images/sell_option_bfagmg.png"
                   className={styles.sellimg}
                 />
@@ -23,7 +23,7 @@ function Sell() {
           <a href="/users/listedProducts">
             <div className={styles.account}>
               <div>
-                <img
+                <img alt="manage"
                   src="https://res.cloudinary.com/aaspaas/image/upload/v1666902404/SellPage/manage_product_naqlf5.png"
                   className={styles.deleteimg}
                 />

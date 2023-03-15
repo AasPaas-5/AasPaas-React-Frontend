@@ -16,7 +16,7 @@ function Error404() {
         <p>not be found on this page</p>
       </div>
       <div className={styles.imgClass}>
-        <img src="https://res.cloudinary.com/sairev/image/upload/v1665898373/SecondSwap/Files/404_rjlhnr_rlmlaz.png" />
+        <img alt="not found" src="https://res.cloudinary.com/sairev/image/upload/v1665898373/SecondSwap/Files/404_rjlhnr_rlmlaz.png" />
       </div>
     </div>
   );

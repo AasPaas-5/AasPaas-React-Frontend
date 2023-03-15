@@ -7,10 +7,10 @@ function Slider() {
   return (
     <Carousel infiniteLoop showStatus={false} showThumbs={false} autoPlay>
       <div>
-        <img src={SliderPic1} />
+        <img alt="bike" src={SliderPic1} />
       </div>
       <div>
-        <img src={SliderPic2} />
+        <img alt="laptop" src={SliderPic2} />
       </div>
     </Carousel>
   );

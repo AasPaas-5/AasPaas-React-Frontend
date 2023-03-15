@@ -17,7 +17,6 @@ function DeleteWarning() {
             All of your locked products will be unlocked for other users to view
           </li>
         </ul>
-        <Br />
         None of the above mentioned details can be retrevived once the account
         is deleted
       </div>
@@ -27,7 +26,7 @@ function DeleteWarning() {
       </div>
 
       <button
-        onclick="javascript:window.history.back();"
+        // onclick="javascript:window.history.back();"
         className={styles.back_btn}
       >
         ← Go back

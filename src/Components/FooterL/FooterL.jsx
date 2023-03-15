@@ -25,21 +25,21 @@ function FooterL() {
         <div className={styles.right_box}>
           <div>You can mail us at</div>
           <a href="mailto: aaspaas.69@gmail.com">
-            <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666902500/Social/Gmail_logo_ja3tqw.png" />
+            <img alt="gmail" src="https://res.cloudinary.com/aaspaas/image/upload/v1666902500/Social/Gmail_logo_ja3tqw.png" />
             <span>&nbsp;&nbsp; aaspaas.69@gmail.com</span>
           </a>
           <div className={styles.check_out}>
             Check us out on &nbsp;
-            <a href="">
-              <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666904062/Social/BNW_Instagram_kphacq.png" />
+            <a href="/">
+              <img alt="instagram" src="https://res.cloudinary.com/aaspaas/image/upload/v1666904062/Social/BNW_Instagram_kphacq.png" />
             </a>
             &nbsp;
-            <a href="">
-              <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666904063/Social/BNW_Linkdin_eqmzbn.png" />
+            <a href="/">
+              <img alt="linkdin" src="https://res.cloudinary.com/aaspaas/image/upload/v1666904063/Social/BNW_Linkdin_eqmzbn.png" />
             </a>
             &nbsp;
-            <a href="">
-              <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666904062/Social/BNW_Youtube_okokd3.png" />
+            <a href="/">
+              <img alt="gmail" src="https://res.cloudinary.com/aaspaas/image/upload/v1666904062/Social/BNW_Youtube_okokd3.png" />
             </a>
           </div>
         </div>
@@ -47,7 +47,7 @@ function FooterL() {
         <div className={styles.hr}></div>
         <div className={styles.footer_boxes}>
           <div className={styles.footer_logo}>
-            <img
+            <img alt="logo"
               onClick="window.location.href = '/'"
               src="https://res.cloudinary.com/aaspaas/image/upload/v1666903174/Social/AasPaas_White_etdgpp.png"
             />
@@ -57,7 +57,7 @@ function FooterL() {
               onClick="window.location.href = 'https://www.iitbhu.ac.in/'"
               className={styles.address_logo}
             >
-              <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666903864/Backgrounds/Group_3614_nldmvf.png" />
+              <img alt="college" src="https://res.cloudinary.com/aaspaas/image/upload/v1666903864/Backgrounds/Group_3614_nldmvf.png" />
             </div>
             <div
               onClick="window.location.href = 'https://www.iitbhu.ac.in/'"
@@ -92,7 +92,7 @@ function FooterL() {
                   <a href="/faq">FAQ</a>
                 </li>
                 <li>
-                  <a href="">About Us</a>
+                  <a href="/">About Us</a>
                 </li>
                 <li>
                   <a href="/users/contact">Contact Us</a>

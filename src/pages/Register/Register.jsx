@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useRegisterMutation } from "../../store";
 import { useDispatch, useSelector } from "react-redux";
-import { loginSuccess, logoutSuccess } from "../../store";
+import { loginSuccess} from "../../store";
 import { useCookies } from "react-cookie";
 import { toast } from "react-toastify";
 import styles from "./Register.module.css"
@@ -15,6 +15,7 @@ function RegistrationForm() {
   const [hostel, setHostel] = useState("");
   const [room, setRoom] = useState("");
   const [register, registerResults] = useRegisterMutation();
+  // eslint-disable-next-line no-unused-vars
   const [cookies, setCookie] = useCookies(["user"]);
 
   const user = useSelector((state) => {

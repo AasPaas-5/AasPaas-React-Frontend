@@ -4,13 +4,13 @@ function FooterS() {
   return (
     <footer>
       <div className={styles.footer_logo}>
-        <img
+        <img alt="logo"
           //   onclick="window.location.href = '/'"
           src="https://res.cloudinary.com/aaspaas/image/upload/v1666903174/Social/AasPaas_White_etdgpp.png"
         />
       </div>
       <div className={styles.footer_address}>
-        <img
+        <img alt="college"
           //   onclick="window.location.href = 'https://www.iitbhu.ac.in/'"
           src="https://res.cloudinary.com/aaspaas/image/upload/v1666903864/Backgrounds/Group_3614_nldmvf.png"
         />
@@ -27,19 +27,19 @@ function FooterS() {
         <h4>Mail us at :</h4>
         <a href="mailto:aaspaas.69@gmail.com">
           &nbsp;
-          <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666902500/Social/Gmail_logo_ja3tqw.png" />
+          <img alt="gmail" src="https://res.cloudinary.com/aaspaas/image/upload/v1666902500/Social/Gmail_logo_ja3tqw.png" />
           aaspaas.69@gmail.com
         </a>
         <p>
           Check us out on : &nbsp;
-          <a href="">
-            <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666904062/Social/BNW_Instagram_kphacq.png" />
+          <a href="/">
+            <img alt="instagram" src="https://res.cloudinary.com/aaspaas/image/upload/v1666904062/Social/BNW_Instagram_kphacq.png" />
           </a>
-          <a href="">
-            <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666904063/Social/BNW_Linkdin_eqmzbn.png" />
+          <a href="/">
+            <img alt="linkdin" src="https://res.cloudinary.com/aaspaas/image/upload/v1666904063/Social/BNW_Linkdin_eqmzbn.png" />
           </a>
-          <a href="">
-            <img src="https://res.cloudinary.com/aaspaas/image/upload/v1666904062/Social/BNW_Youtube_okokd3.png" />
+          <a href="/">
+            <img alt="youtube" src="https://res.cloudinary.com/aaspaas/image/upload/v1666904062/Social/BNW_Youtube_okokd3.png" />
           </a>
         </p>
       </div>

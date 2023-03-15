@@ -6,7 +6,7 @@ function DeleteConfirm() {
       <h1>Are you sure about deleting your account ??</h1>
       <div className={styles.btn_group_vertical}>
         <button
-          onclick="javascript:window.history.back();"
+          // onclick="javascript:window.history.back();"
           type="button"
           // className={styles.btn btn_primary}
         >

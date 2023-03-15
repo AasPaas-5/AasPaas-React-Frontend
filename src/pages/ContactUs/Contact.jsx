@@ -6,20 +6,20 @@ function Contact() {
       <div className={styles.question}>Have some Questions?</div>
       <div className={styles.socials}>
         Contact us on our socials:
-        <a href="">
-          <img src="https://res.cloudinary.com/sairev/image/upload/v1665898373/SecondSwap/Files/Gmail_logo_lyszs9_durbqq.png" />
+        <a href="/">
+          <img alt="mail" src="https://res.cloudinary.com/sairev/image/upload/v1665898373/SecondSwap/Files/Gmail_logo_lyszs9_durbqq.png" />
         </a>
-        <a href="">
-          <img src="https://res.cloudinary.com/sairev/image/upload/v1665898376/SecondSwap/Files/Instagram_gwi0aa_cxpxlj.png" />
+        <a href="/">
+          <img alt="instagram" src="https://res.cloudinary.com/sairev/image/upload/v1665898376/SecondSwap/Files/Instagram_gwi0aa_cxpxlj.png" />
         </a>
-        <a href="">
-          <img src="https://res.cloudinary.com/sairev/image/upload/v1665898378/SecondSwap/Files/Twitter_logo_zsveob_kbuyar.png" />
+        <a href="/">
+          <img alt="twitter" src="https://res.cloudinary.com/sairev/image/upload/v1665898378/SecondSwap/Files/Twitter_logo_zsveob_kbuyar.png" />
         </a>
       </div>
       <div className={styles.or}>OR</div>
       <div className={styles.inner_container}>
         <div className={styles.envelope}>
-          <img src="https://res.cloudinary.com/sairev/image/upload/v1665898373/SecondSwap/Files/Envelop_vk2qar_meq4re.png" />
+          <img alt="envelop" src="https://res.cloudinary.com/sairev/image/upload/v1665898373/SecondSwap/Files/Envelop_vk2qar_meq4re.png" />
         </div>
         <div className={styles.information}>
           <p>Directly ask us here</p>
